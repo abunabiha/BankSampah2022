@@ -67,12 +67,12 @@ CREATE TABLE `sampah` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `setor`
+-- Table structure for table `jemput`
 --
 
-CREATE TABLE `setor` (
-  `id_setor` int(5) NOT NULL,
-  `tanggal_setor` date NOT NULL,
+CREATE TABLE `jemput` (
+  `id_jemput` int(5) NOT NULL,
+  `tanggal_jemput` date NOT NULL,
   `nin` varchar(10) NOT NULL,
   `jenis_sampah` varchar(15) NOT NULL,
   `berat` int(4) NOT NULL,
@@ -115,10 +115,10 @@ ALTER TABLE `sampah`
   ADD PRIMARY KEY (`jenis_sampah`);
 
 --
--- Indexes for table `setor`
+-- Indexes for table `jemput`
 --
-ALTER TABLE `setor`
-  ADD PRIMARY KEY (`id_setor`);
+ALTER TABLE `jemput`
+  ADD PRIMARY KEY (`id_jemput`);
 
 --
 -- Indexes for table `tarik`
@@ -131,10 +131,10 @@ ALTER TABLE `tarik`
 --
 
 --
--- AUTO_INCREMENT for table `setor`
+-- AUTO_INCREMENT for table `jemput`
 --
-ALTER TABLE `setor`
-  MODIFY `id_setor` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+ALTER TABLE `jemput`
+  MODIFY `id_jemput` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `tarik`
